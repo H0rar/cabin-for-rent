@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalúpky pod Viaduktom</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <![endif]-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Museo+Sans&display=swap" rel="stylesheet">
+
+    <script defer src="/app.js"></script>
+
+</head>
+<body>
+    <div class="progress"></div>
+    <script>
+        var better = document.querySelector('.progress');
+        var max = document.body.scrollHeight - innerHeight;
+        var scheduled = false;
+
+        addEventListener('scroll', function() {
+            max = document.body.scrollHeight - innerHeight; 
+            if (!scheduled) {
+                scheduled = true;
+                setTimeout(function() {
+                    scheduled = false;
+                    var percent = (pageYOffset / max);
+                    better.style.transform = 'scaleX(' + percent + ')';
+                }, 100);
+            }
+        });
+    </script>
+
+    
+
+    <header>
+        <!-- Language button -->
+        <div class="language-switcher">
+            <a href="/index.html" class="lang-button">
+                <span>SK</span>
+            </a>
+            <a href="/content/en/home.html" class="lang-button">
+                <span>EN</span>
+            </a>
+        </div>
+
+        <!-- Divider -->
+        <hr class="divider-line">
+
+        <!-- Logo with twxt -->
+        <div class="logo-container">
+            <img src="/image/logo/logo.jpg" alt="Logo" class="logo">
+            <p class="header-text">ENGLISH MOTHERFUCKER</p>
+        </div>
+    </header>
+
+    <!-- Grey bar -->
+    <div class="menu-bar">
+        <button class="menu-button">Menu</button>
+        <div class="dropdown-menu">
+            <a href="/content/en/home.html">Home</a>
+            <a href="/content/en/scandinavia.html">Cottage SCANDINAVIA</a>
+            <a href="/content/en/barn.html">Cottage BARN</a>
+            <a href="/content/en/chalet.html">Cottage CHALET</a>
+            <a href="/content/en/activity.html">Nearby Activity</a>
+            <a href="/content/en/experience.html">Gift an Experience</a>
+            <a href="/content/en/contact.html">Contact & Reservation</a>
+            <a href="/content/en/apartment.html">Apartment in High Tatras</a>
+        </div>
+    </div>
+
+    <!-- Slider picture section -->
+    <div class="image-slider">
+        <div class="images">
+            <img src="/image/slider/1.jpg" alt="Obrázok 1">
+            <img src="/image/slider/2.jpg" alt="Obrázok 2">
+            <img src="/image/slider/3.jpg" alt="Obrázok 3">
+            <img src="/image/slider/4.jpg" alt="Obrázok 4">
+            <img src="/image/slider/5.jpg" alt="Obrázok 5">
+        </div>
+    </div>
+
+    <!-- Divider with text -->
+    <div class="divider">
+        <p>Užite si najlepšieho Trtkania na Horehroní, krasna príroda, najebaný luďia, bývalá mafia a krásna cigánska
+        osada čo by kameňom dohodil.
+        </p>
+    </div>
+
+    <section class="three-containers">
+        <!-- First container -->
+        <div class="container">
+            <img src="/image/3 container/ch1.jpg" alt="ŠKANDINÁVIA" class="container-image">
+            <h3 class="container-title">SCANDINAVIA</h3>
+            <p class="container-text">Krátky text pre prvý kontajner.</p>
+            <a href="/content/en/scandinavia.html" class="container-button">More</a>
+        </div>
+    
+        <!-- Second container -->
+        <div class="container">
+            <img src="/image/3 container/ch2.jpg" alt="STODOLA" class="container-image">
+            <h3 class="container-title">BARN</h3>
+            <p class="container-text">Krátky text pre druhý kontajner.</p>
+            <a href="/content/en/barn.html" class="container-button">More</a>
+        </div>
+    
+        <!-- Third container -->
+        <div class="container">
+            <img src="/image/3 container/ch3.jpg" alt="CHALET" class="container-image">
+            <h3 class="container-title">CHALET</h3>
+            <p class="container-text">Krátky text pre tretí kontajner.</p>
+            <a href="/content/en/chalet.html" class="container-button">More</a>
+        </div>
+    </section>
+
+    <!-- Divider with text -->
+    <div class="divider">
+        <p>PPC prostredie čistý vzduch, fasa srnky, líšky a kuny vám obžerú káble, ta bacha 
+            a trímte si rite v chatke bo maco sa bars nesere.
+        </p>
+    </div>
+
+    <!-- Reviews -->
+    <section class="testimonials">
+        <h2>Povedali o nás</h2>
+        <hr>
+        <div class="testimonials-grid">
+             <!--First -->
+          <div class="testimonial">
+            <p>Krásne miesto na oddych, čisté a moderne zariadené chatky. Určite odporúčam každému!
+                Krásne miesto na oddych, čisté a moderne zariadené chatky. Určite odporúčam každému!
+            </p>
+            <div class="testimonial-author">
+              <span class="author-icon">👤</span>
+              <span class="author-name">Lukáš R.</span>
+            </div>
+          </div>
+           <!-- Second -->
+          <div class="testimonial">
+            <p>Výborný prístup majiteľov, čistota a nádherná príroda. Sme veľmi spokojní.</p>
+            <div class="testimonial-author">
+              <span class="author-icon">👤</span>
+              <span class="author-name">Mária S.</span>
+            </div>
+          </div>
+           <!-- Third -->
+          <div class="testimonial">
+            <p>Bolo to úžasné, nemáme čo vytknúť. Výborná lokalita a ešte lepšie služby!</p>
+            <div class="testimonial-author">
+              <span class="author-icon">👤</span>
+              <span class="author-name">Ivan T.</span>
+            </div>
+          </div>
+           <!-- Fourth -->
+          <div class="testimonial">
+            <p>Všetko bolo nad naše očakávania. Výborné vybavenie a príjemná atmosféra!
+                Všetko bolo nad naše očakávania. Výborné vybavenie a príjemná atmosféra!
+                Všetko bolo nad naše očakávania. Výborné vybavenie a príjemná atmosféra!
+                Všetko bolo nad naše očakávania. Výborné vybavenie a príjemná atmosféra!
+                Všetko bolo nad naše očakávania. Výborné vybavenie a príjemná atmosféra!
+            </p>
+            <div class="testimonial-author">
+              <span class="author-icon">👤</span>
+              <span class="author-name">Katarína V.</span>
+            </div>
+          </div>
+           <!-- Fifth -->
+          <div class="testimonial">
+            <p>Miesto, kam sa určite radi vrátime. Ďakujeme za všetko!
+                Miesto, kam sa určite radi vrátime. Ďakujeme za všetko!
+                Miesto, kam sa určite radi vrátime. Ďakujeme za všetko!
+                Miesto, kam sa určite radi vrátime. Ďakujeme za všetko!
+                Miesto, kam sa určite radi vrátime. Ďakujeme za všetko!
+                Miesto, kam sa určite radi vrátime. Ďakujeme za všetko!
+                Miesto, kam sa určite radi vrátime. Ďakujeme za všetko!
+                Miesto, kam sa určite radi vrátime. Ďakujeme za všetko!
+                Miesto, kam sa určite radi vrátime. Ďakujeme za všetko!
+                Miesto, kam sa určite radi vrátime. Ďakujeme za všetko!
+            </p>
+            <div class="testimonial-author">
+              <span class="author-icon">👤</span>
+              <span class="author-name">Daniel B.</span>
+            </div>
+          </div>
+          <!-- Sixth -->
+          <div class="testimonial">
+            <p>Fantastické prostredie a maximálna spokojnosť so všetkým, čo sme zažili.</p>
+            <div class="testimonial-author">
+              <span class="author-icon">👤</span>
+              <span class="author-name">Michaela N.</span>
+            </div>
+          </div>
+          <!-- Seventh -->
+          <div class="testimonial">
+            <p>Fantastické prostredie a maximálna spokojnosť so všetkým, čo sme zažili.</p>
+            <div class="testimonial-author">
+              <span class="author-icon">👤</span>
+              <span class="author-name">Michaela N.</span>
+            </div>
+          </div>
+          <!-- Eight -->
+          <div class="testimonial">
+            <p>Fantastické prostredie a maximálna spokojnosť so všetkým, čo sme zažili.</p>
+            <div class="testimonial-author">
+              <span class="author-icon">👤</span>
+              <span class="author-name">Michaela N.</span>
+            </div>
+          </div>
+          <!-- Nineth -->
+          <div class="testimonial">
+            <p>Fantastické prostredie a maximálna spokojnosť so všetkým, čo sme zažili.
+                Fantastické prostredie a maximálna spokojnosť so všetkým, čo sme zažili.
+                Fantastické prostredie a maximálna spokojnosť so všetkým, čo sme zažili.
+                Fantastické prostredie a maximálna spokojnosť so všetkým, čo sme zažili.
+                Fantastické prostredie a maximálna spokojnosť so všetkým, čo sme zažili.
+                Fantastické prostredie a maximálna spokojnosť so všetkým, čo sme zažili.
+            </p>
+            <div class="testimonial-author">
+              <span class="author-icon">👤</span>
+              <span class="author-name">Michaela N.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="equal-panel">
+        <div class="panel-item">
+            <img src="/image/bottom panel/left.jpg" alt="Obrázok 1" class="panel-image">
+        </div>
+        <div class="panel-item panel-text">
+            <p>Toto je textové pole s bielym textom a sivým pozadím. Toto je textové pole s bielym textom a sivým pozadím.
+                Toto je textové pole s bielym textom a sivým pozadím. Toto je textové pole s bielym textom a sivým pozadím.
+                Toto je textové pole s bielym textom a sivým pozadím. Toto je textové pole s bielym textom a sivým pozadím.
+            </p>
+        </div>
+        <div class="panel-item">
+            <img src="/image/bottom panel/right.jpg" alt="Obrázok 2" class="panel-image">
+        </div>
+    </section>
+
+    </section class="social-media">
+        <div class="icons">
+            <a href="https://www.booking.com" target="_blank" class="icon"><i class="fas fa-bed"></i></a>
+            <a href="https://www.airbnb.com" target="_blank" class="icon"><i class="fas fa-home"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank" class="icon">
+              <i class="fab fa-whatsapp"></i></a>
+        </div>
+
+    </section>
+      
+    <footer class="address-footer">
+        <div class="address">
+            <p>You find us there:</p>
+            <p><strong><a href="https://www.google.com/maps/place/Chalupky+pod+viaduktom/@48.8512794,20.1980936,116m/data=!3m1!1e3!4m15!1m8!3m7!1s0x473fcc57a3cd1f37:0xdd6d86aa842adc52!2s976+73+Telg%C3%A1rt!3b1!8m2!3d48.8515807!4d20.1859398!16zL20vMGcwdF9z!3m5!1s0x473fcd00711ad3fb:0x6310828870a93ed1!8m2!3d48.8514221!4d20.1984582!16s%2Fg%2F11w31hxs7n?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D">
+                Chalúpky pod Viaduktom</a></strong></p>
+            <p>Telgárt 558</p>
+            <p>976 73 Telgárt</p>
+        </div>
+        <div class="phone">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+421123456789" class="phone-number">+421 123 456 789</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 <a href="https://www.h0rar.sk" class="copyright-link">
+                <img src="/image/footer/Horar2.png" alt="Logo" class="footer-logo"> H0rar</a></p>
+                All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+</html>
