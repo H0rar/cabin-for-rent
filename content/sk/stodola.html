@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatka STODOLA</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <![endif]-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Museo+Sans&display=swap" rel="stylesheet">
+
+    <script defer src="/app.js"></script>
+
+</head>
+<body>
+    <div class="progress"></div>
+    <script>
+        var better = document.querySelector('.progress');
+        var max = document.body.scrollHeight - innerHeight;
+        var scheduled = false;
+
+        addEventListener('scroll', function() {
+            max = document.body.scrollHeight - innerHeight; 
+            if (!scheduled) {
+                scheduled = true;
+                setTimeout(function() {
+                    scheduled = false;
+                    var percent = (pageYOffset / max);
+                    better.style.transform = 'scaleX(' + percent + ')';
+                }, 100);
+            }
+        });
+    </script>
+
+    
+
+    <header>
+        <!-- Language button -->
+        <div class="language-switcher">
+            <a href="/content/sk/stodola.html" class="lang-button">
+                <span>SK</span>
+            </a>
+            <a href="/content/en/barn.html" class="lang-button">
+                <span>EN</span>
+            </a>
+        </div>
+
+        <!-- Divider -->
+        <hr class="divider-line">
+
+        <!-- Logo with twxt -->
+        <div class="logo-container">
+            <img src="/image/logo/logo.jpg" alt="Logo" class="logo">
+            <p class="header-text">šopa more</p>
+        </div>
+    </header>
+
+    <!-- Grey bar -->
+    <div class="menu-bar">
+        <button class="menu-button">Menu</button>
+        <div class="dropdown-menu">
+            <a href="/index.html">Domov</a>
+            <a href="/content/sk/skandinavia.html">Chatka ŠKANDINÁVIA</a>
+            <a href="/content/sk/stodola.html">Chatka STODOLA</a>
+            <a href="/content/sk/chalet.html">Chatka CHALET</a>
+            <a href="/content/sk/aktivity v okoli.html">Aktivity v okolí</a>
+            <a href="/content/sk/darujte zazitok.html">Darujte si zážitok</a>
+            <a href="/content/sk/kontakt a rezervacia.html">Kontakt a Rezervácia</a>
+            <a href="/content/sk/ubytovanie vys tat.html">Naše ubytovanie Vysoké Tatry</a>
+        </div>
+    </div>
+
+    <div class="full-width-image">
+        <img src="/image/chatky/stodola/uvodna.jpg" alt="Popis obrázka">
+    </div>
+    
+    <div class="centered-text-about">
+        <h2 class="section-title">Chatka STODOLA</h2>
+        <hr class="divider-line">
+        <p>Marína moja! teda tak sme my
+            ako tie božie plamene,
+            ako tie kvety na chladnej zemi,
+            ako tie drahé kamene;
+            padajú hviezdy, aj my padneme,
+            vädnú tie kvety, aj my zvädneme,
+            a klenoty hruda kryje:
+            Ale tie hviezdy predsi svietili,
+            a pekný život tie kvety žili,
+            a diamant v hrude nezhnije!</p>
+    </div>
+
+    <div class="divider">
+        <p>Zariadenie a Vybavenie
+        </p>
+    </div>
+
+    <div class="centered-text">
+        <hr class="divider-line">
+        <p><strong>Celková kapacita ubytovania:</strong> 6 osôb (6 plnohodnotných postelí + detská postieľka)</p>
+        <p><strong>Horné podlažie:</strong></p>
+        <ul class="custom-bullet-list">
+            <li>3 spálne, v každej spálni 2 plnohodnotné postele s kvalitným matracom, k dispozícií čisté posteľné prádlo, v najväčšej spálni možnosť pridať detskú postieľku</li>
+        </ul>
+        <p><strong>Dolné podlažie:</strong></p>
+        <ul class="custom-bullet-list">
+            <li>Plne zariadená kuchyňa (sporák, umývačka riadu, varná konvica, stôl, 6 stoličiek, sada hrncov, taniere, príbory, hrnčeky a poháre, drobné kuchynské náradie…)</li>
+            <li>Spoločenská miestnosť</li>
+            <li>Kúpeľna a WC</li>
+        </ul>
+        <p><strong>Ostatné:</strong></p>
+        <ul class="custom-bullet-list">
+            <li>K dispozícii spoločenské hry</li>
+            <li>Na terase oddychové sedenie</li>
+            <li>Altánok s posedením a ohniskom</li>
+            <li>Bezplatné wifi pripojenie</li>
+            <li>Bezplatné nestrážené parkovanie pred chatami</li>
+        </ul>
+        <p><strong>Cenník:</strong></p>
+        <ul class="custom-bullet-list">
+            <li>Cena za noc od 160 EUR</li>
+            <li>Minimálna rezervácia od 2 nocí, podľa sezóny</li>
+            <li>Pobyt možný aj so psom. Poplatok za pobyt so psom je 30 EUR za celý pobyt.</li>
+            <li>Dlhodobé rezervácie a skupinové rezervácie cena po dohode</li>
+        </ul>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <a href="/image/chatky/stodola/galery/1.jpg">
+                <img src="/image/chatky/stodola/galery/1.jpg" alt="Obrázok 1">
+            </a>
+            <a href="/image/chatky/stodola/galery/2.jpg">
+                <img src="/image/chatky/stodola/galery/2.jpg" alt="Obrázok 2">
+            </a>
+            <a href="/image/chatky/stodola/galery/3.jpg">
+                <img src="/image/chatky/stodola/galery/3.jpg" alt="Obrázok 3">
+            </a>    
+            <a href="/image/chatky/stodola/galery/4.jpg">
+                <img src="/image/chatky/stodola/galery/4.jpg" alt="Obrázok 4">
+            </a>
+            <a href="/image/chatky/stodola/galery/5.jpg">
+                <img src="/image/chatky/stodola/galery/5.jpg" alt="Obrázok 5">
+            </a>
+            <a href="/image/chatky/stodola/galery/6.jpg">
+                <img src="/image/chatky/stodola/galery/6.jpg" alt="Obrázok 6">
+            </a>
+        </div>
+    </div>
+
+
+    </section class="social-media">
+        <div class="icons">
+            <a href="https://www.booking.com" target="_blank" class="icon"><i class="fas fa-bed"></i></a>
+            <a href="https://www.airbnb.com" target="_blank" class="icon"><i class="fas fa-home"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank" class="icon">
+              <i class="fab fa-whatsapp"></i></a>
+        </div>
+
+    </section>
+      
+    <footer class="address-footer">
+        <div class="address">
+            <p>Tu nás najdete:</p>
+            <p><strong><a href="https://www.google.com/maps/place/Chalupky+pod+viaduktom/@48.8512794,20.1980936,116m/data=!3m1!1e3!4m15!1m8!3m7!1s0x473fcc57a3cd1f37:0xdd6d86aa842adc52!2s976+73+Telg%C3%A1rt!3b1!8m2!3d48.8515807!4d20.1859398!16zL20vMGcwdF9z!3m5!1s0x473fcd00711ad3fb:0x6310828870a93ed1!8m2!3d48.8514221!4d20.1984582!16s%2Fg%2F11w31hxs7n?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D">
+                Chalúpky pod Viaduktom</a></strong></p>
+            <p>Telgárt 558</p>
+            <p>976 73 Telgárt</p>
+        </div>
+        <div class="phone">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+421123456789" class="phone-number">+421 123 456 789</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 <a href="https://www.h0rar.sk" class="copyright-link">
+                <img src="/image/footer/Horar2.png" alt="Logo" class="footer-logo"> H0rar</a></p>
+            Všetky práva vyhradené
+        </div>
+    </footer>
+
+</body>
+</html>
